@@ -130,7 +130,7 @@
   .hero {
     display: grid;
     gap: 32px;
-    padding-block: 8px 24px;
+    padding-block: 4px 16px;
     align-items: center;
   }
 
@@ -314,7 +314,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 12px;
-    padding-block: 4px 20px;
+    padding-block: 4px 12px;
   }
 
   @media (max-width: 639px) {
@@ -345,11 +345,45 @@
     color: var(--secondary);
   }
 
+  .spotlight {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    padding-block: 0 16px;
+  }
+
+  .spotlight-label {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-right: 4px;
+  }
+
+  .spotlight a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 36px;
+    padding: 6px 14px;
+    border: 1px solid var(--card-line);
+    border-radius: var(--radius-control);
+    background: var(--card);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--ink);
+    text-decoration: none;
+    transition: border-color var(--duration-quick) var(--ease-decelerate);
+  }
+
+  .spotlight a:hover { border-color: var(--accent); }
+
   .steps {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 12px;
-    padding-block: 0 20px;
+    padding-block: 0 12px;
     list-style: none;
     margin: 0;
   }
@@ -441,6 +475,13 @@
     <div class="stat" role="listitem"><b>$8,575</b><span>in rewards live across 17 open bounties</span></div>
     <div class="stat" role="listitem"><b>$1,325</b><span>biggest single bounty on the board</span></div>
     <div class="stat" role="listitem"><b>$250</b><span>top prize in this contest &mdash; top 100 win a share of $1,000</span></div>
+  </div>
+
+  <div class="shell spotlight">
+    <span class="spotlight-label">Live right now</span>
+    <a href="https://make.fun/bounty/tiny-chess-01?ref=zv8dnn3m">Tiny Chess 4KB &middot; $500</a>
+    <a href="https://make.fun/bounty/token-radar-01?ref=zv8dnn3m">Token Radar &middot; $1,325</a>
+    <a href="https://make.fun/bounty/github-core-clone-01?ref=zv8dnn3m">GitHub Clone &middot; $500</a>
   </div>
 
   <ol class="shell steps">
